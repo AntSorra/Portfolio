@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Designs</title>
+  <link rel="stylesheet" href="Style4.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="sss.html">Home</a></li>
+        <li><a href="ABOUT.html">About Me</a></li>
+        <li>
+<a href="https://www.instagram.com/antsorra/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+</li>
+      </ul>
+    </nav>
+  </header>
+	
+
+  <!-- Gallery -->
+<h3>Motion Graphics</h3>
+	<div class="gallery">
+
+  <!-- Centered Row for First 3 Images -->
+  <div class="gallery-row">
+  <video class="gif-video" autoplay loop muted playsinline>
+<source src="ImagesM/LNX ANIMATED - Copy.mp4" type="video/mp4">
+</video>
+  	</div>
+
+
+		
+
+	<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.querySelector('.lightbox-img');
+  const closeBtn = document.querySelector('.close');
+
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // Optional: Close lightbox when clicking outside the image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>

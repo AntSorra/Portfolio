@@ -1,0 +1,182 @@
+/* Reset */
+html, body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.first-name {
+  color: #f25022; /* Orange */
+}
+
+.last-name {
+  color: #ff5722; /* Slightly deeper orange */
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 14px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  color: #f25022;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 60px;
+  gap: 60px;
+}
+
+.project {
+  width: 300px;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+}
+
+.project p {
+  margin-top: 10px;
+  color: #f25022;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero {
+text-align: center;
+padding: 80px 40px 40px;
+animation: fadeUp 1s ease-out;
+}
+
+
+.hero-title {
+font-size: 48px;
+font-weight: bold;
+color: #333;
+letter-spacing: 1px;
+margin-bottom: 15px;
+}
+
+
+.hero-title span {
+color: #f25022; /* your accent orange */
+}
+
+
+/* subtitle */
+
+
+.hero-subtitle {
+font-size: 16px;
+color: #666;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+
+/* animation */
+
+
+@keyframes fadeUp {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+/* mobile */
+
+
+@media (max-width: 768px) {
+.hero-title {
+font-size: 34px;
+}
+}
+
+nav ul {
+display: flex;
+gap: 20px;
+list-style: none;
+align-items: center;
+}
+
+
+nav a {
+text-decoration: none;
+color: #333;
+font-size: 14px;
+padding: 8px 18px;
+border-radius: 30px;
+border: 1px solid transparent;
+transition: all 0.3s ease;
+letter-spacing: 1px;
+}
+
+
+/* Hover effect */
+
+
+nav a:hover {
+color: #fff;
+background-color: #f25022;
+border-color: #f25022;
+transform: translateY(-2px);
+}
+
+
+/* Active page (optional if you add class="active") */
+
+
+nav a.active {
+background-color: #f25022;
+color: white;
+}

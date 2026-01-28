@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Designs</title>
+  <link rel="stylesheet" href="Style2.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="sss.html">Home</a></li>
+        <li><a href="ABOUT.html">About Me</a></li>
+        <li>
+<a href="https://www.instagram.com/antsorra/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+</li>
+      </ul>
+    </nav>
+  </header>
+	
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="" alt="Expanded Design" />
+</div>
+  <!-- Gallery -->
+<h3>Book Cover</h3>
+	<div class="gallery">
+
+  <!-- Centered Row for First 3 Images -->
+  <div class="gallery-row">
+    <img src="ImagesP/BOOKS.jpg" alt="Design 1" />
+    <img src="ImagesP/BOOKS11111 - Copy.jpg" alt="Design 2" />
+  
+		</div>
+
+			<h3>Travel Posters</h3>
+		<div class="gallery-row">
+  <img src="ImagesP/ISTANBUL TURKEY.png" class="small-box" alt="New Design 1" />
+  <img src="ImagesP/TRAVELPOSTER2.png" class="small-box" alt="New Design 2" />
+  <img src="ImagesP/NEW YORK CITY.png" class="small-box" alt="New Design 3" />
+  <img src="ImagesP/LONDON POSTER.jpg" class="small-box" alt="New Design 4" />
+</div>	
+		
+
+<h3>Business Cards</h3>
+<div class="gallery-row1">
+  <img src="ImagesP/CARD1.png" alt="Design 8" />
+  <img src="ImagesP/BUSINESS CARDD - Copy.jpg" alt="Design 9" />
+</div>
+		
+		<h3>Magazine Cover</h3>
+<div class="gallery-row1">
+  <img src="ImagesP/MAGAZINE COVER  - Copy.jpg" alt="Design 8" />
+</div>
+		
+
+	<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.querySelector('.lightbox-img');
+  const closeBtn = document.querySelector('.close');
+
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // Optional: Close lightbox when clicking outside the image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>

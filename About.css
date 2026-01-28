@@ -1,0 +1,99 @@
+.about-container {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 80px;
+padding: 80px 60px;
+flex-wrap: wrap;
+}
+
+
+/* Image section */
+
+
+.about-image {
+flex-shrink: 0;
+}
+
+
+.about-image img {
+width: 340px;
+height: 440px;
+object-fit: cover;
+border: 1px solid #eee;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+border-radius: 6px;
+}
+
+
+/* Text section */
+
+
+.about-text {
+max-width: 520px;
+}
+
+
+.about-text h1 {
+font-size: 42px;
+margin-bottom: 20px;
+color: #f25022;
+letter-spacing: 1px;
+}
+
+
+.about-text p {
+font-size: 16px;
+line-height: 1.8;
+margin-bottom: 16px;
+color: #333;
+}
+
+
+/* Subtle animation (optional but nice) */
+
+
+.about-container {
+animation: fadeIn 0.8s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+/* ================================
+MOBILE RESPONSIVE
+================================ */
+
+
+@media (max-width: 768px) {
+
+
+.about-container {
+flex-direction: column;
+text-align: center;
+gap: 40px;
+}
+
+
+.about-image img {
+width: 260px;
+height: 340px;
+}
+
+
+.about-text h1 {
+font-size: 34px;
+}
+
+
+}
